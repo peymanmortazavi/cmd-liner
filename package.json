@@ -1,0 +1,15 @@
+{
+  "name": "cmd-liner",
+  "version": "1.0.0",
+  "description": "A command line utility library to make it easier to make command line tools.",
+  "main": "cmd-liner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peyman Mortazavi",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.0",
+    "optimist": "^0.6.1"
+  }
+}

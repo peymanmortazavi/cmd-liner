@@ -1,6 +1,6 @@
 {
   "name": "cmd-liner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A command line utility library to make it easier to make command line tools.",
   "main": "cmd-liner.js",
   "scripts": {

@@ -23,8 +23,14 @@ Now you need to create your commands object.
 
 ```JavaScript
 var commands = {};
-commands.say = { action: function() { console.log('Hi !'); } };
-commands.this = {
+commands.say = {
+  action: function(cmd) {
+    console.log('I say ' + cmd.args[0]);
+  },
+  argsCount: 1,
+  desc: "A good description for the command 'say' :D"
+};
+commands.command2 = {
   commands: {
     is: function(optimist) {
       console.log('I can use optimist to parse arguments');
@@ -37,5 +43,5 @@ commands.this = {
 Take a look at https://github.com/substack/node-optimist. Every 'action' will be called with the instance of 'optimist' so you can parse arguments and create aliases. If your requirement needs no such thing, don't worry about it.
 
 ## To-Do
-[ ] Allow non-dashed parameters. (like 'echo <something>')
+[X] Allow non-dashed parameters. (like 'echo $arg0')
 [ ] Code example and more documentation

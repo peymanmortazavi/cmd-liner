@@ -21,10 +21,11 @@ exports.init = function(commands, action, options) {
     var currentHandler = argv._[i];
 
     if(currentCommand.commands && currentCommand.commands[currentHandler]) {
-
-      if(i == argv._.length-1){
+      var argsCount = (currentCommand.commands[currentHandler].argsCount || 0);
+      if(i == argv._.length-(argsCount+1)) {
         currentCommand.commands[currentHandler].action =
           currentCommand.commands[currentHandler].action || function(){console.log(cmd.help());}
+        cmd.args = cmd.argv._.slice(-argsCount);
         currentCommand.commands[currentHandler].action(cmd);
         break;
       } else {

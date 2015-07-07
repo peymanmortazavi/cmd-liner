@@ -1,13 +1,21 @@
 {
   "name": "cmd-liner",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A command line utility library to make it easier to make command line tools.",
   "main": "cmd-liner.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Peyman Mortazavi",
+  "author": {
+    "name" : "Peyman Mortazavi",
+    "email" : "pey.mortazavi@gmail.com",
+    "url" : "https://www.linkedin.com/pub/peyman-mortazavi/50/b51/73b"
+  },
   "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/peymanmortazavi/cmd-liner.git"
+  },
   "dependencies": {
     "colors": "^1.1.0",
     "optimist": "^0.6.1"

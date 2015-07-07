@@ -16,7 +16,7 @@ $ npm install cmd-liner
 ## Quick Start
 
 ```JavaScript
-var cmd-liner = require('cmd-liner');
+var cmdliner = require('cmd-liner');
 ```
 
 Now you need to create your commands object.
@@ -40,8 +40,13 @@ commands.command2 = {
 }
 ```
 
+Then you can initialize the command liner.
+```JavaScript
+cmdliner.init(commands);
+```
+
 Take a look at https://github.com/substack/node-optimist. Every 'action' will be called with the instance of 'optimist' so you can parse arguments and create aliases. If your requirement needs no such thing, don't worry about it.
 
 ## To-Do
-[X] Allow non-dashed parameters. (like 'echo $arg0')
-[ ] Code example and more documentation
+- [X] Allow non-dashed parameters. (like 'echo $arg0')
+- [ ] More code examples and documentation

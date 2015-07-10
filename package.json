@@ -1,6 +1,6 @@
 {
   "name": "cmd-liner",
-  "version": "1.0.3",
+  "version": "1.0.31",
   "description": "A command line utility library to make it easier to make command line tools.",
   "main": "cmd-liner.js",
   "scripts": {
@@ -16,6 +16,12 @@
       "type": "git",
       "url": "https://github.com/peymanmortazavi/cmd-liner.git"
   },
+  "keywords":[
+    "parser",
+    "command",
+    "command-line",
+    "option"
+  ],
   "dependencies": {
     "colors": "^1.1.0",
     "optimist": "^0.6.1"

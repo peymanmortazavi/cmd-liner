@@ -1,4 +1,9 @@
+[npm-url]: https://npmjs.com/package/cmd-liner
+[downloads-image]: http://img.shields.io/npm/dm/cmd-liner.svg
+[npm-image]: http://img.shields.io/npm/v/cmd-liner.svg
 # cmd-liner
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+
 Node.js library to help build awesome command line tools.
 
 ## Installation

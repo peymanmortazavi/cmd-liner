@@ -4,7 +4,7 @@
 # cmd-liner
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
 
-Node.js library to help build awesome command line tools.
+Node.js library to help build awesome command line tools. Don't waste your time learning argv and parsing command strings. Easily define hierarchy of your commands using JavaScript objects.
 
 ## Installation
 

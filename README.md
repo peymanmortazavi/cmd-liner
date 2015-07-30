@@ -50,6 +50,12 @@ Then you can initialize the command liner.
 cmdliner.init(commands);
 ```
 
+Now you can test your code:
+```shell
+$ node mycode.js say Hi
+I say Hi
+```
+
 Take a look at https://github.com/substack/node-optimist. Every 'action' will be called with the instance of 'optimist' so you can parse arguments and create aliases. If your requirement needs no such thing, don't worry about it.
 
 ## To-Do
